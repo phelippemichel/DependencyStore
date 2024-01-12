@@ -14,7 +14,8 @@ public class OrderController : ControllerBase
     private readonly IDeliveryFeeService _deliveryFeeService;
     private readonly IPromoCodeRepository _promoCodeRepository;
     
-    public OrderController(ICustomerRepository customerRepository,
+    public OrderController(
+        ICustomerRepository customerRepository,
         IDeliveryFeeService deliveryFeeService,
         IPromoCodeRepository promoCodeRepository)
     { 
